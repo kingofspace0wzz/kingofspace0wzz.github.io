@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Prince Wang"
-  avatar           : profile.png
+  avatar           : "profile.jpg"
   bio              : "2nd year Undergraduate, BS/MS in Computer Science, College of Creative Studies, UCSB"
   location         : "UCSB, California"
   employer         :
