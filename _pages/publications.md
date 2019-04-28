@@ -4,7 +4,7 @@ title: "Publications [(Google Scholar Profile)](https://scholar.google.com/citat
 permalink: /publications/
 author_profile: true
 ---
-<b>[Riemannian Normalizing Flow on Variational Wasserstein Autoencoder for Text Modeling](https://arxiv.org/abs/1904.02399)</b><br>
+<b>[Neural Gaussian Copula](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
 <p>
   <img src="https://kingofspace0wzz.github.io/images/stage.png?raw=true" alt="Photo" style="width: 150px;"/> 
