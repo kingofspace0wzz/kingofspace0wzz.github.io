@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 <b>[Neural Gaussian Copula](https://kingofspace0wzz.github.io/publications)</b><br>
-<b>Prince Zizhuang Wang</b>, William Yang Wang<br>
+<b>Prince Zizhuang Wang</b>, William Yang Wang.<br>
 <p>
   <img src="https://kingofspace0wzz.github.io/images/stage.png?raw=true" alt="Photo" style="width: 150px;"/> 
 </p>
