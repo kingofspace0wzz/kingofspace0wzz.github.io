@@ -23,5 +23,5 @@ My name is Prince Zizhuang Wang. I am a second year (senior) Computer Science ma
 
 # Experience
 
-* 2019/6 - 2019/9 Research Internship @ USC Information Science Institute, Natural Language Processing Group
-* 2018/9 - present Undergraduate Researcher @ UCSB Natural Language Processing Lab
+* 2019/6 - 2019/9. <span style="color: blue"> Research Internship </span> @ USC Information Science Institute, Natural Language Processing Group
+* 2018/9 - present. <span style="color: blue"> Undergraduate Researcher </span> @ UCSB Natural Language Processing Lab
