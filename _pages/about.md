@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Prince Zizhuang Wang. I am a second year (senior) Computer Science major at [College of Creative Studies](https://ccs.ucsb.edu/), [University of California Santa Barbara](https://www.ucsb.edu/), advised by Prof. [William Wang](https://sites.cs.ucsb.edu/~william/) and Prof. [Yu-Xiang Wang](https://sites.cs.ucsb.edu/~yuxiangw/). I am in our UCSB BS/MS program and I am expecting to get my Bachelor Science and Master degree next year. My research interests include: Machine Learning, Deep Learning, Natural Language Processing, Generative Models, and Variational Inference. 
+My name is Prince Zizhuang Wang (my Chinese name is 王子壮, which means a mighty prince). I am a second year (senior) Computer Science major at [College of Creative Studies](https://ccs.ucsb.edu/), [University of California Santa Barbara](https://www.ucsb.edu/), advised by Prof. [William Wang](https://sites.cs.ucsb.edu/~william/) and Prof. [Yu-Xiang Wang](https://sites.cs.ucsb.edu/~yuxiangw/). I am in our UCSB BS/MS program and I am expecting to get my Bachelor Science and Master degree next year. My research interests include: Machine Learning, Deep Learning, Natural Language Processing, Generative Models, and Variational Inference. 
 
 # Education
 
