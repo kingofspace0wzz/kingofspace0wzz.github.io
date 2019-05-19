@@ -13,7 +13,7 @@ author_profile: true
 
 <b>[Riemannian Normalizing Flow on Variational Wasserstein Autoencoder for Text Modeling](https://arxiv.org/abs/1904.02399)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
-<i>2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics</i>, <b><span stype="color: red">Oral long paper</span></b>. <b><span style="color: blue">NAACL 2019</span></b><br>
+<i>2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics</i>, <b><span style="color: red">Oral long paper</span></b>. <b><span style="color: blue">NAACL 2019</span></b><br>
 <p>
   <img src="https://kingofspace0wzz.github.io/images/map.png?raw=true" alt="Photo" style="width: 150px;"/> 
 </p>
