@@ -4,6 +4,10 @@ title: "Publications [(Google Scholar Profile)](https://scholar.google.com/citat
 permalink: /publications/
 author_profile: true
 ---
+<b>[Representation Learning With Hilbert Schmidt Independence Criterion](https://kingofspace0wzz.github.io/publications)</b><br>
+<b>Prince Zizhuang Wang</b>, Yu-Xiang Wang,  William Yang Wang<br>
+<i>Under Review</i>
+
 <b>[Neural Gaussian Copula](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
 <p>
