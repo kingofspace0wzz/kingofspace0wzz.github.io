@@ -6,7 +6,7 @@ author_profile: true
 ---
 <b>[Representation Learning With Hilbert Schmidt Independence Criterion](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, Yu-Xiang Wang,  William Yang Wang<br>
-<i>Under Review</i> <b>NeurIPS 2019</b>
+<i>Under Review</i>, <b>NeurIPS 2019</b>
 
 <b>[Neural Gaussian Copula](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
