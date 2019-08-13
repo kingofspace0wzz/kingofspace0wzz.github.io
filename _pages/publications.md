@@ -10,10 +10,11 @@ author_profile: true
 
 <b>[Neural Gaussian Copula](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
+<i>Accepted at 2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing</i>, <b><span style="color: red">long paper</span></b>. <b><span style="color: blue">EMNLP-IJCNLP 2019</span></b><br>
 <p>
   <img src="https://kingofspace0wzz.github.io/images/stage.png?raw=true" alt="Photo" style="width: 100px;"/> 
 </p>
-<i>Under Review</i>
+
 
 <b>[Riemannian Normalizing Flow on Variational Wasserstein Autoencoder for Text Modeling](https://arxiv.org/abs/1904.02399)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
