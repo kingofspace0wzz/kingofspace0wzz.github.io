@@ -8,7 +8,7 @@ author_profile: true
 <b>Prince Zizhuang Wang</b>, Yu-Xiang Wang,  William Yang Wang<br>
 <i>Under Review</i>, <b>NeurIPS 2019</b>
 
-<b>[Neural Gaussian Copula](https://kingofspace0wzz.github.io/publications)</b><br>
+<b>[Neural Gaussian Copula for Variational Autoencoder](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
 <i>Accepted at 2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing</i>, <b><span style="color: red">long paper</span></b>. <b><span style="color: blue">EMNLP-IJCNLP 2019</span></b><br>
 <p>
