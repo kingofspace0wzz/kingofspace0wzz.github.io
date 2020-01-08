@@ -17,6 +17,7 @@ My name is Prince Zizhuang Wang (my Chinese name is 王子壮, which means a mig
 
 # Awards
 
+* 2019 CRA Outstanding Undergraduate Researchers, Finalist
 * 2019 Chancellor's Award for Excellence in Undergraduate Research (<span style="color: red"> Highest honor for Undergraduate Research at UCSB, 3 recipients each year </span>)
 * 2018-2019 UCSB Natural Language Processing Lab Outstanding Undergraduate Research Award
 * 2018 Gene and Lucas Undergraduate Research Award
