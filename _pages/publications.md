@@ -4,7 +4,7 @@ title: "Publications [(Google Scholar Profile)](https://scholar.google.com/citat
 permalink: /publications/
 author_profile: true
 ---
-<b>[On the Encoder-Decoder Incompatibility in Variational Text Modeling and Beyond(https://arxiv.org/abs/2004.09189)</b><br>
+<b>[On the Encoder-Decoder Incompatibility in Variational Text Modeling and Beyond](https://arxiv.org/abs/2004.09189)</b><br>
 Chen Wu, Prince Zizhuang Wang, William Yang Wang<br>
 <b><span style="color: blue">ACL 2020</span></b><br>
 [[pdf]](https://arxiv.org/abs/2004.09189) 
