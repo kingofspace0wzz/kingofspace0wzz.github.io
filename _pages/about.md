@@ -12,8 +12,8 @@ My name is Prince Zizhuang Wang (my Chinese name is 王子壮, which means a mig
 
 # Education
 
-* MS, Computer Science, 2019-2020 (expected), UCSB
-* BS, Computer Science (Honors)/Math (Minor), 2017-2020 (expected), College of Creative Studies, UCSB
+* MS, Computer Science, 2019-2021 (expected), UCSB
+* BS, Computer Science (Honors)/Math (Minor), 2017-2021 (expected), College of Creative Studies, UCSB
 
 # Publication
 
