@@ -15,10 +15,10 @@ Chen Wu, Prince Zizhuang Wang, William Yang Wang<br>
 
 <b>[Neural Gaussian Copula for Variational Autoencoder](https://arxiv.org/abs/1909.03569)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
-<i>Accepted at 2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing</i>, <b><span style="color: red">long paper</span></b>. <b><span style="color: blue">EMNLP-IJCNLP 2019</span></b><br>
+<i>2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on Natural Language Processing</i>. <b><span style="color: blue">EMNLP-IJCNLP 2019</span></b><br>
 [[pdf]](https://arxiv.org/abs/1909.03569) [[code]](https://github.com/kingofspace0wzz/copula-vae-lm)
 
 <b>[Riemannian Normalizing Flow on Variational Wasserstein Autoencoder for Text Modeling](https://arxiv.org/abs/1904.02399)</b><br>
 <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
-<i>2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics</i>, <b><span style="color: red">Oral long paper</span></b>. <b><span style="color: blue">NAACL 2019</span></b><br>
+<i>2019 Annual Conference of the North American Chapter of the Association for Computational Linguistics</i>, <b><span style="color: red">Oral</span></b>. <b><span style="color: blue">NAACL 2019</span></b><br>
 [[pdf]](https://arxiv.org/abs/1904.02399) [[code]](https://github.com/kingofspace0wzz/wae-rnf-lm)
