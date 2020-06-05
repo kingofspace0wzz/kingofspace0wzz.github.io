@@ -18,7 +18,7 @@ My name is Prince Zizhuang Wang (my Chinese name is 王子壮, which means a mig
 # Publication
 
 <b>[On the Encoder-Decoder Incompatibility in Variational Text Modeling and Beyond](https://arxiv.org/abs/2004.09189)</b><br>
-Chen Wu, Prince Zizhuang Wang, William Yang Wang<br>
+Chen Wu, <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
 <b><span style="color: blue">ACL 2020</span></b><br>
 [[pdf]](https://arxiv.org/abs/2004.09189) 
 
