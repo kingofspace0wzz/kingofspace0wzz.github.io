@@ -20,7 +20,7 @@ My name is Prince Zizhuang Wang (my Chinese name Wang Zizhuang means a mighty pr
 <b>[On the Encoder-Decoder Incompatibility in Variational Text Modeling and Beyond](https://arxiv.org/abs/2004.09189)</b><br>
 Chen Wu, <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
 <b><span style="color: blue">ACL 2020</span></b><br>
-[[pdf]](https://arxiv.org/abs/2004.09189) 
+[[pdf]](https://arxiv.org/abs/2004.09189) [[code]](https://github.com/ChenWu98/Coupled-VAE) 
 
 <b>[Representation Learning With Hilbert Schmidt Independence Criterion](https://kingofspace0wzz.github.io/publications)</b><br>
 <b>Prince Zizhuang Wang</b>, Yu-Xiang Wang,  William Yang Wang<br>
