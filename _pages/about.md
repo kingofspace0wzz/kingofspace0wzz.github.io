@@ -47,3 +47,10 @@ Chen Wu, <b>Prince Zizhuang Wang</b>, William Yang Wang<br>
 
 * 2019/6 - 2019/9. <span style="color: blue"> Research Internship </span> @ USC Information Science Institute, Natural Language Processing Group
 * 2018/9 - present. <span style="color: blue"> Undergraduate Researcher </span> @ UCSB Natural Language Processing Lab
+
+# Music 
+
+* [全民k歌](https://kg.qq.com/node/personal?uid=619d9d81252b378d37)
+* [bilibili](https://space.bilibili.com/694364425)
+
+I've been practicing my singing skills and playing Saxophone at home since COVID-19. Some of my earlier songs can be found at [全民k歌](https://kg.qq.com/node/personal?uid=619d9d81252b378d37). I plan to open a music channel on [bilibili](https://space.bilibili.com/694364425) and Youtube when I think I am ready :).
