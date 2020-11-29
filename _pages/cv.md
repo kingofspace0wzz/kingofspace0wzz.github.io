@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-[Click to view my Curriculum Vitae [PDF]](http://kingofspace0wzz.github.io/files/simple-CV.pdf)
+[Click to view my Curriculum Vitae [PDF]](http://kingofspace0wzz.github.io/files/simple_CV.pdf)
