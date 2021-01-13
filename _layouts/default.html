@@ -30,4 +30,7 @@ layout: compress
     {% include scripts.html %}
 
   </body>
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %} 
+  {% endif %}
 </html>
