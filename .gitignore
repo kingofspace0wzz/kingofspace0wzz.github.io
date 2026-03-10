@@ -8,7 +8,6 @@
 *.xml
 *.yaml
 *.yml
-*.html
 *.css
 *.js
 *.php
