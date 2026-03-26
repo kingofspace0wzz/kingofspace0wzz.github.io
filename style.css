@@ -119,6 +119,24 @@ a#name span{
     padding-bottom: 10px;
 }
 
+#publication .work-block {
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+#publication .work-block:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+    border-color: #2563eb;
+}
+
 .section_title {
     /*color: #159957;*/
     color: black;
