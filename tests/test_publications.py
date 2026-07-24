@@ -46,6 +46,27 @@ class PublicationPageTests(unittest.TestCase):
                 self.assertIsNotNone(badge, f"Missing status badge for {title}")
                 self.assertEqual(normalize(badge.get_text()), status)
 
+    def test_under_review_badges_use_lighter_style(self):
+        review_badges = [
+            badge
+            for badge in self.soup.select("#publication .badge")
+            if normalize(badge.get_text()).startswith("Under Review @")
+        ]
+        self.assertEqual(len(review_badges), 5)
+        for badge in review_badges:
+            self.assertIn("badge-under-review", badge.get("class", []))
+            self.assertNotIn("background-color", badge.get("style", ""))
+
+        stylesheet = (ROOT / "style.css").read_text(encoding="utf-8")
+        self.assertRegex(
+            stylesheet,
+            r"\.badge-under-review\s*\{[^}]*background-color:\s*#EDE9FE;",
+        )
+        self.assertRegex(
+            stylesheet,
+            r"\.badge-under-review\s*\{[^}]*color:\s*#5B21B6;",
+        )
+
     def test_recent_paper_links_and_anchor_ids(self):
         _, weclaw = self.publication("WeClawArena")
         self.assertEqual(weclaw.get("id"), "paper-weclawarena")

@@ -137,6 +137,11 @@ a#name span{
     border-color: #2563eb;
 }
 
+.badge-under-review {
+    background-color: #EDE9FE;
+    color: #5B21B6;
+}
+
 @media (max-width: 767px) {
     #publication .work-block > .project.col-xs-3,
     #publication .work-block > .col-xs-9 {
