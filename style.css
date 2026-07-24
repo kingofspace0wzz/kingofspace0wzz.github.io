@@ -137,6 +137,19 @@ a#name span{
     border-color: #2563eb;
 }
 
+@media (max-width: 767px) {
+    #publication .work-block > .project.col-xs-3,
+    #publication .work-block > .col-xs-9 {
+        float: none;
+        width: 100%;
+    }
+
+    #publication .work-block > .project.col-xs-3 h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
 .section_title {
     /*color: #159957;*/
     color: black;

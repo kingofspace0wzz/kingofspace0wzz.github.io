@@ -1,0 +1,119 @@
+import re
+import unittest
+from pathlib import Path
+
+from bs4 import BeautifulSoup
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def normalize(text):
+    text = re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"\s*,\s*", ", ", text)
+
+
+class PublicationPageTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.soup = BeautifulSoup(
+            (ROOT / "index.html").read_text(encoding="utf-8"), "html.parser"
+        )
+
+    def publication(self, title):
+        publication_section = self.soup.find(id="publication")
+        link = publication_section.find(
+            "a", string=lambda text: text is not None and title in normalize(text)
+        )
+        self.assertIsNotNone(link, f"Missing publication: {title}")
+        row = link.find_parent("div", class_="work-block")
+        self.assertIsNotNone(row, f"Publication has no work-block: {title}")
+        return row, link
+
+    def test_review_status_badges(self):
+        expected = {
+            "WeClawArena": "Under Review @ EMNLP 2026",
+            "AgentSocialBench": "Under Review @ EMNLP 2026",
+            "PRIME:": "Under Review @ EMNLP 2026",
+            "SLEA-RL": "Under Review @ NeurIPS 2026",
+            "When Simulation Lies": "Under Review @ NeurIPS 2026",
+        }
+
+        for title, status in expected.items():
+            with self.subTest(title=title):
+                row, _ = self.publication(title)
+                badge = row.find("span", class_="badge")
+                self.assertIsNotNone(badge, f"Missing status badge for {title}")
+                self.assertEqual(normalize(badge.get_text()), status)
+
+    def test_recent_paper_links_and_anchor_ids(self):
+        _, weclaw = self.publication("WeClawArena")
+        self.assertEqual(weclaw.get("id"), "paper-weclawarena")
+        self.assertEqual(weclaw.get("href"), "https://kingofspace0wzz.github.io/")
+
+        _, prime = self.publication("PRIME:")
+        self.assertEqual(prime.get("id"), "paper-prime")
+        self.assertEqual(prime.get("href"), "https://arxiv.org/abs/2604.07645")
+
+        when_row, when_link = self.publication("When Simulation Lies")
+        self.assertEqual(when_link.get("id"), "paper-when-simulation-lies")
+        self.assertEqual(when_link.get("href"), "https://arxiv.org/abs/2605.11928")
+        self.assertIsNotNone(
+            when_row.find(
+                "a", href="https://github.com/WillChow66/robustbench-tc-release"
+            )
+        )
+        self.assertIsNotNone(
+            when_row.find("a", href="https://arxiv.org/pdf/2605.11928")
+        )
+
+        publication_section = self.soup.find(id="publication")
+        ids = [
+            element["id"]
+            for element in publication_section.find_all(attrs={"id": True})
+        ]
+        self.assertEqual(len(ids), len(set(ids)), "HTML IDs must be unique")
+        self.assertFalse(
+            self.soup.find("a", href="..."), 'Placeholder href="..." remains'
+        )
+
+    def test_when_simulation_lies_authors(self):
+        row, _ = self.publication("When Simulation Lies")
+        expected = (
+            "Xiaolin Zhou, Aojie Yuan, Zheng Luo, Zipeng Ling, Xixiao Pan, "
+            "Yicheng Gao, Haiyue Zhang, Jiate Li, Shuli Jiang, "
+            "Prince Zizhuang Wang, Zixuan Zhu, Jinbo Liu, Ryan A. Rossi, "
+            "Hua Wei, Xiyang Hu"
+        )
+        self.assertIn(expected, normalize(row.get_text(" ", strip=True)))
+
+    def test_recent_publication_order(self):
+        titles = [
+            normalize(link.get_text())
+            for link in self.soup.select("#publication .work-block .col-xs-9 > a")
+        ]
+
+        positions = {}
+        for prefix in (
+            "WeClawArena",
+            "When Simulation Lies",
+            "PRIME:",
+            "AgentSocialBench",
+            "SLEA-RL",
+        ):
+            matching_positions = [
+                index for index, title in enumerate(titles) if title.startswith(prefix)
+            ]
+            self.assertEqual(
+                len(matching_positions), 1, f"Expected one publication starting with {prefix}"
+            )
+            positions[prefix] = matching_positions[0]
+
+        self.assertEqual(
+            [positions[prefix] for prefix in positions],
+            sorted(positions.values()),
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()
