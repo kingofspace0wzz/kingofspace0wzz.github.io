@@ -46,7 +46,7 @@ class PublicationPageTests(unittest.TestCase):
                 self.assertIsNotNone(badge, f"Missing status badge for {title}")
                 self.assertEqual(normalize(badge.get_text()), status)
 
-    def test_under_review_badges_use_lighter_style(self):
+    def test_under_review_badges_use_light_orange_style(self):
         review_badges = [
             badge
             for badge in self.soup.select("#publication .badge")
@@ -60,11 +60,15 @@ class PublicationPageTests(unittest.TestCase):
         stylesheet = (ROOT / "style.css").read_text(encoding="utf-8")
         self.assertRegex(
             stylesheet,
-            r"\.badge-under-review\s*\{[^}]*background-color:\s*#EDE9FE;",
+            r"\.badge-under-review\s*\{[^}]*background-color:\s*#FFF7ED;",
         )
         self.assertRegex(
             stylesheet,
-            r"\.badge-under-review\s*\{[^}]*color:\s*#5B21B6;",
+            r"\.badge-under-review\s*\{[^}]*border:\s*1px solid #FED7AA;",
+        )
+        self.assertRegex(
+            stylesheet,
+            r"\.badge-under-review\s*\{[^}]*color:\s*#9A3412;",
         )
 
     def test_recent_paper_links_and_anchor_ids(self):

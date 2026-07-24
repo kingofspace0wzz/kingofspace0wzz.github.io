@@ -138,8 +138,9 @@ a#name span{
 }
 
 .badge-under-review {
-    background-color: #EDE9FE;
-    color: #5B21B6;
+    background-color: #FFF7ED;
+    border: 1px solid #FED7AA;
+    color: #9A3412;
 }
 
 @media (max-width: 767px) {
