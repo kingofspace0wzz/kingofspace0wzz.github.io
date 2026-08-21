@@ -32,8 +32,8 @@ class PublicationPageTests(unittest.TestCase):
 
     def test_review_status_badges(self):
         expected = {
-            "WeClawArena": "Under Review @ EMNLP 2026",
-            "AgentSocialBench": "Under Review @ EMNLP 2026",
+            "WeClawArena": "EMNLP 2026 (Findings)",
+            "AgentSocialBench": "EMNLP 2026",
             "PRIME:": "Under Review @ EMNLP 2026",
             "SLEA-RL": "Under Review @ NeurIPS 2026",
             "When Simulation Lies": "Under Review @ NeurIPS 2026",
@@ -52,7 +52,7 @@ class PublicationPageTests(unittest.TestCase):
             for badge in self.soup.select("#publication .badge")
             if normalize(badge.get_text()).startswith("Under Review @")
         ]
-        self.assertEqual(len(review_badges), 5)
+        self.assertEqual(len(review_badges), 3)
         for badge in review_badges:
             self.assertIn("badge-under-review", badge.get("class", []))
             self.assertNotIn("background-color", badge.get("style", ""))
@@ -74,7 +74,16 @@ class PublicationPageTests(unittest.TestCase):
     def test_recent_paper_links_and_anchor_ids(self):
         _, weclaw = self.publication("WeClawArena")
         self.assertEqual(weclaw.get("id"), "paper-weclawarena")
-        self.assertEqual(weclaw.get("href"), "https://kingofspace0wzz.github.io/")
+        self.assertEqual(weclaw.get("href"), "https://arxiv.org/abs/2608.03499")
+        weclaw_row, _ = self.publication("WeClawArena")
+        self.assertIsNotNone(
+            weclaw_row.find(
+                "a", href="https://github.com/kingofspace0wzz/WeClawArena"
+            )
+        )
+        self.assertIsNotNone(
+            weclaw_row.find("a", href="https://arxiv.org/abs/2608.03499")
+        )
 
         _, prime = self.publication("PRIME:")
         self.assertEqual(prime.get("id"), "paper-prime")
