@@ -34,7 +34,7 @@ class PublicationPageTests(unittest.TestCase):
         expected = {
             "WeClawArena": "EMNLP 2026 (Findings)",
             "AgentSocialBench": "EMNLP 2026",
-            "PRIME:": "Under Review @ EMNLP 2026",
+            "PRIME:": "Under Review",
             "SLEA-RL": "Under Review @ NeurIPS 2026",
             "When Simulation Lies": "Under Review @ NeurIPS 2026",
         }
@@ -50,7 +50,7 @@ class PublicationPageTests(unittest.TestCase):
         review_badges = [
             badge
             for badge in self.soup.select("#publication .badge")
-            if normalize(badge.get_text()).startswith("Under Review @")
+            if normalize(badge.get_text()).startswith("Under Review")
         ]
         self.assertEqual(len(review_badges), 3)
         for badge in review_badges:
@@ -129,11 +129,11 @@ class PublicationPageTests(unittest.TestCase):
 
         positions = {}
         for prefix in (
-            "WeClawArena",
             "When Simulation Lies",
             "PRIME:",
-            "AgentSocialBench",
             "SLEA-RL",
+            "WeClawArena",
+            "AgentSocialBench",
         ):
             matching_positions = [
                 index for index, title in enumerate(titles) if title.startswith(prefix)
