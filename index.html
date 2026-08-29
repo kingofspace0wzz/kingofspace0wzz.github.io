@@ -13,16 +13,22 @@
 </script>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
 
-    <title>Prince Wang</title>
+    <title>Prince Wang | LLM Agents &amp; AI Research</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site.css">
 
 </head>
+<body>
     <div class="navbar navbar-fixed-top">
         <div class="container">
-            <strong class="navbar-brand">Prince Wang</strong>
+            <a class="navbar-brand" href="#about">Prince Wang</a>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li><a href="#news">News</a></li>-->
@@ -40,7 +46,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <a href="#", id='prince'>
+                    <a href="#" id="prince">
                     <img style="margin-top: 0px" id="me-img"
                     src="images/prince.jpg"
                     onmouseover="this.src='/images/dark.jpg'" onmouseout="this.src='/images/prince.jpg'">
@@ -50,24 +56,69 @@
                     <div style="margin-left: 20px; font-size: small; color: rgb(226, 0, 177);">Galleries of Prince 🤴🤴🤴</div>
                 </div>
                 <div class="col-xs-8">
-                    <h2>
-                        Prince Wang
-                         <!--<a href="dataset/CV_JiaoSun.pdf">-->
-<!--                         <a href="https://twitter.com/kingofspace0wzz"
-                           class="twitter-follow-button" data-show-count="true"
-                           data-size="medium">
-                            Follow
-                            @kingofspace0wzz</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  -->
-                        <a href="https://github.com/kingofspace0wzz">
-                            <img src = "images/icon/github_square.png" title = "github" width ="24">
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=KLOg_HAAAAAJ&hl=en">
-                            <img src = "images/icon/scholar.jpg" title = "scholar" width="24">
-                        </a>
-                        <a href="https://open.spotify.com/artist/2OdaHP1cgP3LvKPQEJymWk?si=4B2RKJcbTU2J21Pt6FDOtw&dl_branch=1&nd=1">
-                            <img src = "images/icon/spotify.png" title = "spotify" width="24">
-                        </a>
-                    </h2>
+                    <p class="hero-eyebrow">Ph.D. Researcher · Carnegie Mellon University</p>
+                    <h1 class="hero-title">Prince <span>Wang</span></h1>
+                    <p class="hero-tagline">Building capable, efficient, and safe LLM agents for human-centered collaboration.</p>
+                    <div class="hero-links" aria-label="Profile links">
+                        <a href="mailto:princewang@cmu.edu">Email</a>
+                        <a href="https://scholar.google.com/citations?user=KLOg_HAAAAAJ&hl=en">Google Scholar</a>
+                        <a href="https://github.com/kingofspace0wzz">GitHub</a>
+                        <a href="https://twitter.com/kingofspace0wzz">X</a>
+                        <a href="https://open.spotify.com/artist/2OdaHP1cgP3LvKPQEJymWk?si=4B2RKJcbTU2J21Pt6FDOtw&dl_branch=1&nd=1">Spotify</a>
+                    </div>
+                    <ul class="hero-chips" aria-label="Research areas">
+                        <li>Human-Centric Agents</li>
+                        <li>Agent Post-Training</li>
+                        <li>Evaluation &amp; Safety</li>
+                    </ul>
+
+                    <section class="research-logos" aria-labelledby="research-logos-title">
+                        <p class="research-logos__label" id="research-logos-title">Research Experience at</p>
+                        <div class="research-logos__row">
+                            <a class="research-logo" href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Carnegie Mellon University Ph.D. research affiliation, 2022 to present">
+                                <span class="research-logo__stage research-logo__stage--cmu">
+                                    <img src="images/organizations/cmu-wordmark.svg" alt="Carnegie Mellon University">
+                                </span>
+                                <span class="research-logo__name">CMU</span>
+                                <span class="research-logo__date">2022–Present</span>
+                            </a>
+                            <a class="research-logo" href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer" aria-label="Amazon research experience, 2025">
+                                <span class="research-logo__stage research-logo__stage--amazon">
+                                    <img src="images/organizations/amazon-logo.svg" alt="Amazon">
+                                </span>
+                                <span class="research-logo__name">Amazon</span>
+                                <span class="research-logo__date">2025</span>
+                            </a>
+                            <a class="research-logo" href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer" aria-label="AWS AI Fundamental Research experience, 2026">
+                                <span class="research-logo__stage research-logo__stage--aws">
+                                    <img src="images/organizations/aws-logo.svg" alt="AWS">
+                                </span>
+                                <span class="research-logo__name">AWS AI</span>
+                                <span class="research-logo__date">2026</span>
+                            </a>
+                            <a class="research-logo" href="https://www.capitalone.com/tech/" target="_blank" rel="noopener noreferrer" aria-label="Capital One MLX research experience, 2023">
+                                <span class="research-logo__stage research-logo__stage--capital-one">
+                                    <img src="images/organizations/capital-one-logo.svg" alt="Capital One">
+                                </span>
+                                <span class="research-logo__name">Capital One · MLX</span>
+                                <span class="research-logo__date">2023</span>
+                            </a>
+                            <a class="research-logo" href="https://nlp.cs.ucsb.edu/" target="_blank" rel="noopener noreferrer" aria-label="UC Santa Barbara NLP Lab research experience, 2018 to 2022">
+                                <span class="research-logo__stage research-logo__stage--ucsb">
+                                    <img src="images/organizations/ucsb-wordmark.svg" alt="UC Santa Barbara">
+                                </span>
+                                <span class="research-logo__name">UCSB · NLP Lab</span>
+                                <span class="research-logo__date">2018–2022</span>
+                            </a>
+                            <a class="research-logo" href="https://www.isi.edu/" target="_blank" rel="noopener noreferrer" aria-label="USC Information Sciences Institute research experience, 2019">
+                                <span class="research-logo__stage research-logo__stage--isi">
+                                    <img src="images/organizations/usc-isi-logo.jpg" alt="USC Information Sciences Institute">
+                                </span>
+                                <span class="research-logo__name">USC · ISI</span>
+                                <span class="research-logo__date">2019</span>
+                            </a>
+                        </div>
+                    </section>
 
                     <p>
                          Hi, my name is Prince 👋 I am a PhD student 🎓 and entrepreneur 💼 in Information Systems at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, 
@@ -100,7 +151,7 @@
                                 <li> 
                                     2022-present &nbsp; PhD in Information System, Carnegie Mellon University
                                 </li>
-                                <li id="li">
+                                <li>
                                     2017-2022 &nbsp; 5 year BS/MS in Computer Science, UC Santa Barbara
                                 </li>
                             </ul>
@@ -113,6 +164,35 @@
     </div>
     <div id="rows" style="margin-left: 8%">
 
+        <section id="highlights" class="preview-section highlights-section">
+            <div class="container">
+                <div class="preview-section-header">
+                    <div>
+                        <h2>Recent Highlights</h2>
+                    </div>
+                    <p>Selected updates from 2026</p>
+                </div>
+                <div class="highlight-list">
+                    <article class="highlight-item">
+                        <time>Aug 2026</time>
+                        <p>🏆 <a href="#paper-agentsocialbench">AgentSocialBench</a> was nominated for the EMNLP 2026 Outstanding Paper Award.</p>
+                    </article>
+                    <article class="highlight-item">
+                        <time>Aug 2026</time>
+                        <p>🎉 <a href="#paper-weclawarena">WeClawArena</a> was accepted to EMNLP 2026 Findings.</p>
+                    </article>
+                    <article class="highlight-item">
+                        <time>2026</time>
+                        <p>🏆 <a href="https://arxiv.org/abs/2502.05468">Gen-DFL</a> received recognition in the IISE DAIS Best Track Paper Competition.</p>
+                    </article>
+                    <article class="highlight-item">
+                        <time>Summer 2026</time>
+                        <p>Joined Amazon AWS AI Fundamental Research for an internship focused on LLMs and agents.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
 
         <div id="publication">
             <div class="container">
@@ -122,7 +202,15 @@
                     </a>
                 </h2>
 
-                <h3 style="color: #260090;">LLM Agents</h3>
+                <div class="publication-filter" role="group" aria-label="Filter publications by topic">
+                    <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter-button" type="button" data-filter="agentic-systems" aria-pressed="false">Agentic Systems</button>
+                    <button class="filter-button" type="button" data-filter="human-centric-agents" aria-pressed="false">Human-Centric Agents</button>
+                    <button class="filter-button" type="button" data-filter="evaluation-safety" aria-pressed="false">Evaluation &amp; Safety</button>
+                    <button class="filter-button" type="button" data-filter="post-training" aria-pressed="false">Post-Training</button>
+                    <button class="filter-button" type="button" data-filter="generative-models" aria-pressed="false">Generative Models</button>
+                </div>
+                <p class="publication-filter-status" aria-live="polite">Showing all 9 publications</p>
 
                 <div style="height:8px;font-size:1px;">&nbsp;</div>
 
@@ -253,8 +341,6 @@
 
                     </div>
 
-                <h3 style="color: #260090;">Optimization</h3>
-
                 <div style="height:8px;font-size:1px;">&nbsp;</div>
 
                 <div class="row work-block">
@@ -269,7 +355,7 @@
                             <strong>Prince Zizhuang Wang</strong>, Shuyi Chen, Jinhao Liang, Ferdinando Fioretto, Shixiang Zhu
 
                             <br>
-                            <a href="https://arxiv.org/abs/2502.05468">
+                            <a id="paper-gen-dfl" href="https://arxiv.org/abs/2502.05468">
                                 Gen-DFL: Decision-Focused Generative Learning for Robust Decision Making
                             </a>
                             <br>
@@ -279,8 +365,6 @@
                         </div>
 
                     </div>
-
-                <h3 style="color: #260090;">Text Generation</h3>
 
                 <div style="height:8px;font-size:1px;">&nbsp;</div>
 
@@ -294,7 +378,7 @@
                             Chen Wu, <strong>Prince Zizhuang Wang</strong>, William Yang Wang
 
                             <br>
-                            <a href="https://arxiv.org/abs/2004.09189">
+                            <a id="paper-coupled-vae" href="https://arxiv.org/abs/2004.09189">
                                 On the Encoder-Decoder Incompatibility in Variational Text Modeling and Beyond
                             </a>
                             <br>
@@ -320,7 +404,7 @@
                             <strong>Prince Zizhuang Wang</strong>, William Yang Wang
 
                             <br>
-                            <a href="https://arxiv.org/abs/1909.03569">
+                            <a id="paper-copula-vae" href="https://arxiv.org/abs/1909.03569">
                                 Neural Gaussian Copula for Variational Autoencoder
                             </a>
                             <br>
@@ -346,7 +430,7 @@
                             <strong>Prince Zizhuang Wang</strong>, William Yang Wang
 
                             <br>
-                            <a href="https://arxiv.org/abs/1904.02399">
+                            <a id="paper-wae-rnf" href="https://arxiv.org/abs/1904.02399">
                                 Riemannian Normalizing Flow on Variational Wasserstein Autoencoder for Text Modeling
                             </a>
                             <br>
@@ -422,7 +506,7 @@
                         Research Internship, <strong>USC, ISI NLP Lab</strong>
                         </br>
                         Advisors: <a
-                            href="violetpeng.github.io/">Nanyun (Violet) Peng</a>
+                            href="https://vnpeng.net/">Nanyun (Violet) Peng</a>
                         and <a href="https://www.isi.edu/people/gregv/about">Greg Ver Steeg</a> 
                     </div>
                 </div>
@@ -433,23 +517,23 @@
             <div class="container">
                 <h2 class="section_title">Awards</h2>
                 <div class="row work-block">
-                        <li id="li">
+                        <li>
                             2026 &nbsp; EMNLP Outstanding Paper Award Nominee
                         </li>
-                        <li id="li">
+                        <li>
                             2026 &nbsp; IISE DAIS Best Track Paper Competition
                         </li>
-                        <li id="li">
+                        <li>
                             2020 &nbsp CRA Outstanding Undergraduate Researchers, Finalist
                         </li>
                             <!--<li id="li-important"> 2018.10 &nbsp; I am looking for a Ph.D. position!</li>-->
-                        <li id="li"> 2019 &nbsp Chancellor's Award for Excellence in Undergraduate Research 
+                        <li> 2019 &nbsp Chancellor's Award for Excellence in Undergraduate Research
                                 (Highest honor for Undergraduate Research at UCSB; 4 recipients each year)
                         </li>
-                        <li id="li"> 2019 &nbsp UCSB NLP Lab Outstanding Undergraduate Research Award
+                        <li> 2019 &nbsp UCSB NLP Lab Outstanding Undergraduate Research Award
                         </li>
                             <!--<li id="li-important"> 2018.10 &nbsp; I am looking for a Ph.D. position!</li>-->
-                        <li id="li"> 2018 &nbsp Gene and Lucas Undergraduate Research Award
+                        <li> 2018 &nbsp Gene and Lucas Undergraduate Research Award
                         </li>
                 </div>
                 
@@ -504,7 +588,6 @@
         </div>
     </footer>
 
-<body>
-
+<script src="site.js"></script>
 </body>
 </html>
