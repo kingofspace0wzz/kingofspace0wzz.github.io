@@ -82,11 +82,32 @@ class PublicationPageTests(unittest.TestCase):
         stylesheet = (ROOT / "style.css").read_text(encoding="utf-8")
         self.assertRegex(
             stylesheet,
-            r"\.badge-award-nominee\s*\{[^}]*background-color:\s*#FFF8E1;",
+            r"\.badge-award\s*\{[^}]*background-color:\s*#FFF8E1;",
         )
         self.assertRegex(
             stylesheet,
-            r"\.badge-award-nominee\s*\{[^}]*border:\s*1px solid #F4C95D;",
+            r"\.badge-award\s*\{[^}]*border:\s*1px solid #F4C95D;",
+        )
+
+    def test_gen_dfl_has_iise_dais_award_badge(self):
+        row, _ = self.publication("Gen-DFL")
+        badge = row.find("span", class_="badge-award")
+        self.assertIsNotNone(badge)
+        self.assertEqual(
+            normalize(badge.get_text()),
+            "2026 IISE DAIS Best Track Paper Competition",
+        )
+
+    def test_iise_dais_appears_first_in_awards(self):
+        awards = self.soup.find(id="awards")
+        self.assertIsNotNone(awards)
+        entries = [normalize(item.get_text()) for item in awards.find_all("li")]
+        self.assertGreater(len(entries), 0)
+        self.assertEqual(
+            entries[0], "2026 IISE DAIS Best Track Paper Competition"
+        )
+        self.assertEqual(
+            entries.count("2026 IISE DAIS Best Track Paper Competition"), 1
         )
 
     def test_recent_paper_links_and_anchor_ids(self):
