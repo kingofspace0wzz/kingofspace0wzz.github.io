@@ -102,16 +102,23 @@ class PublicationPageTests(unittest.TestCase):
             "2026 IISE DAIS Best Track Paper Competition",
         )
 
-    def test_iise_dais_appears_first_in_awards(self):
+    def test_recent_paper_awards_appear_first_in_awards(self):
         awards = self.soup.find(id="awards")
         self.assertIsNotNone(awards)
         entries = [normalize(item.get_text()) for item in awards.find_all("li")]
-        self.assertGreater(len(entries), 0)
+        self.assertGreaterEqual(len(entries), 2)
         self.assertEqual(
-            entries[0], "2026 IISE DAIS Best Track Paper Competition"
+            entries[:2],
+            [
+                "2026 EMNLP Outstanding Paper Award Nominee",
+                "2026 IISE DAIS Best Track Paper Competition",
+            ],
         )
         self.assertEqual(
             entries.count("2026 IISE DAIS Best Track Paper Competition"), 1
+        )
+        self.assertEqual(
+            entries.count("2026 EMNLP Outstanding Paper Award Nominee"), 1
         )
 
     def test_recent_paper_links_and_anchor_ids(self):
