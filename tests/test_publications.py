@@ -82,11 +82,15 @@ class PublicationPageTests(unittest.TestCase):
         stylesheet = (ROOT / "style.css").read_text(encoding="utf-8")
         self.assertRegex(
             stylesheet,
-            r"\.badge-award\s*\{[^}]*background-color:\s*#FFF8E1;",
+            r"\.badge-award\s*\{[^}]*background-color:\s*#FEE2E2;",
         )
         self.assertRegex(
             stylesheet,
-            r"\.badge-award\s*\{[^}]*border:\s*1px solid #F4C95D;",
+            r"\.badge-award\s*\{[^}]*border:\s*1px solid #FCA5A5;",
+        )
+        self.assertRegex(
+            stylesheet,
+            r"\.badge-award\s*\{[^}]*color:\s*#B91C1C;",
         )
 
     def test_gen_dfl_has_iise_dais_award_badge(self):
