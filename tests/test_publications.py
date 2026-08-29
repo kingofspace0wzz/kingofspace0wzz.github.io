@@ -71,6 +71,24 @@ class PublicationPageTests(unittest.TestCase):
             r"\.badge-under-review\s*\{[^}]*color:\s*#9A3412;",
         )
 
+    def test_agentsocialbench_has_award_nomination_badge(self):
+        row, _ = self.publication("AgentSocialBench")
+        badge = row.find("span", class_="badge-award-nominee")
+        self.assertIsNotNone(badge)
+        self.assertEqual(
+            normalize(badge.get_text()), "Outstanding Paper Award Nominee"
+        )
+
+        stylesheet = (ROOT / "style.css").read_text(encoding="utf-8")
+        self.assertRegex(
+            stylesheet,
+            r"\.badge-award-nominee\s*\{[^}]*background-color:\s*#FFF8E1;",
+        )
+        self.assertRegex(
+            stylesheet,
+            r"\.badge-award-nominee\s*\{[^}]*border:\s*1px solid #F4C95D;",
+        )
+
     def test_recent_paper_links_and_anchor_ids(self):
         _, weclaw = self.publication("WeClawArena")
         self.assertEqual(weclaw.get("id"), "paper-weclawarena")
