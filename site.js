@@ -4,7 +4,7 @@
     const publications = [
         {
             selector: "#paper-when-simulation-lies",
-            tags: ["Agentic Systems", "Evaluation & Safety"]
+            tags: ["Post-Training", "Agentic Systems", "Evaluation & Safety"]
         },
         {
             selector: "#paper-prime",
