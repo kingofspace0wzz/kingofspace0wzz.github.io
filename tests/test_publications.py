@@ -35,8 +35,8 @@ class PublicationPageTests(unittest.TestCase):
             "WeClawArena": "EMNLP 2026 (Findings)",
             "AgentSocialBench": "EMNLP 2026",
             "PRIME:": "Under Review",
-            "SLEA-RL": "Under Review @ NeurIPS 2026",
-            "When Simulation Lies": "Under Review @ NeurIPS 2026",
+            "SLEA-RL": "NeurIPS 2026",
+            "When Simulation Lies": "NeurIPS 2026",
         }
 
         for title, status in expected.items():
@@ -52,7 +52,7 @@ class PublicationPageTests(unittest.TestCase):
             for badge in self.soup.select("#publication .badge")
             if normalize(badge.get_text()).startswith("Under Review")
         ]
-        self.assertEqual(len(review_badges), 3)
+        self.assertEqual(len(review_badges), 1)
         for badge in review_badges:
             self.assertIn("badge-under-review", badge.get("class", []))
             self.assertNotIn("background-color", badge.get("style", ""))
