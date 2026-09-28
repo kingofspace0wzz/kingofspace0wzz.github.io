@@ -32,6 +32,7 @@ class PublicationPageTests(unittest.TestCase):
 
     def test_review_status_badges(self):
         expected = {
+            "CUA-SWE:": "Preprint 2026",
             "WeClawArena": "EMNLP 2026 (Findings)",
             "AgentSocialBench": "EMNLP 2026",
             "PRIME:": "Under Review",
@@ -179,8 +180,9 @@ class PublicationPageTests(unittest.TestCase):
 
         positions = {}
         for prefix in (
-            "When Simulation Lies",
+            "CUA-SWE:",
             "PRIME:",
+            "When Simulation Lies",
             "SLEA-RL",
             "WeClawArena",
             "AgentSocialBench",

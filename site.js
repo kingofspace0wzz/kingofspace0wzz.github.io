@@ -3,12 +3,16 @@
 
     const publications = [
         {
-            selector: "#paper-when-simulation-lies",
-            tags: ["Post-Training", "Agentic Systems", "Evaluation & Safety"]
+            selector: "#paper-cua-swe",
+            tags: ["Agentic Systems", "Evaluation & Safety"]
         },
         {
             selector: "#paper-prime",
             tags: ["Human-Centric Agents", "Agentic Systems"]
+        },
+        {
+            selector: "#paper-when-simulation-lies",
+            tags: ["Post-Training", "Agentic Systems", "Evaluation & Safety"]
         },
         {
             selector: "#paper-slearl",

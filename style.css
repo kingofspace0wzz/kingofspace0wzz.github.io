@@ -137,6 +137,7 @@ a#name span{
     border-color: #2563eb;
 }
 
+.badge-preprint,
 .badge-under-review {
     background-color: #FFF7ED;
     border: 1px solid #FED7AA;
