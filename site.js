@@ -4,7 +4,7 @@
     const publications = [
         {
             selector: "#paper-cua-swe",
-            tags: ["Agentic Systems", "Evaluation & Safety"]
+            tags: ["Computer-Use Agents", "VLM", "Multimodality", "Agentic Systems", "Evaluation & Safety"]
         },
         {
             selector: "#paper-prime",
