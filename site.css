@@ -585,6 +585,7 @@ body a:focus {
 #publication .paper-links svg {
     width: 20px;
     height: 20px;
+    margin: 0;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -653,19 +654,6 @@ body a:focus {
 
 #publication .col-xs-9 > a:first-of-type:hover {
     color: var(--purple);
-}
-
-#publication .col-xs-9 a img {
-    width: 20px;
-    height: 20px;
-    margin: 4px 5px 0 0;
-    border-radius: 4px;
-    opacity: 0.78;
-    transition: opacity 150ms ease;
-}
-
-#publication .col-xs-9 a:hover img {
-    opacity: 1;
 }
 
 .badge-under-review {
