@@ -108,11 +108,17 @@ body a:focus {
     border-bottom: 1px solid var(--line);
 }
 
-#about .row {
-    display: flex;
-    align-items: flex-start;
-    gap: clamp(36px, 7vw, 86px);
+#about > .container > .row {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(32px, 5vw, 64px);
     margin: 0;
+}
+
+#about > .container > .row::before,
+#about > .container > .row::after {
+    content: none;
 }
 
 #about .col-xs-4,
@@ -122,9 +128,8 @@ body a:focus {
 }
 
 #about .col-xs-4 {
-    width: 28%;
-    min-width: 220px;
-    padding-top: 52px;
+    width: 230px;
+    min-width: 0;
     text-align: center;
 }
 
@@ -246,7 +251,7 @@ body a:focus {
 }
 
 .research-logos {
-    margin: 26px 0 28px;
+    margin: 32px 0 28px;
     padding: 17px 0 19px;
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
@@ -355,13 +360,14 @@ body a:focus {
     font-size: 10px;
 }
 
-#about .col-xs-8 > p:not(.hero-eyebrow):not(.hero-tagline) {
-    max-width: 760px;
-    margin-bottom: 15px;
+#about .about-body > p {
+    margin-bottom: 18px;
     color: #5d5867;
+    font-size: 17px;
+    line-height: 1.75;
 }
 
-#about .col-xs-8 > p img {
+#about .about-body > p img {
     display: none;
 }
 
@@ -542,6 +548,45 @@ body a:focus {
 
 #publication .publication-item.is-hidden {
     display: none;
+}
+
+#publication .paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+#publication .paper-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 36px;
+    padding: 6px 11px;
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    background: var(--soft);
+    color: #403b49;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+#publication .paper-links a:hover,
+#publication .paper-links a:focus-visible {
+    border-color: #cfc5e6;
+    background: var(--purple-soft);
+    color: var(--purple-dark);
+    text-decoration: none;
+}
+
+#publication .paper-links img,
+#publication .paper-links svg {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 #publication .project,
@@ -794,7 +839,7 @@ body a:focus {
         padding: 118px 0 48px;
     }
 
-    #about .row {
+    #about > .container > .row {
         display: block;
     }
 
@@ -858,6 +903,15 @@ body a:focus {
 
     #publication .project {
         margin-bottom: 8px;
+    }
+
+    #publication .paper-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #publication .paper-links a {
+        min-height: 44px;
     }
 
     #experience .work-block {
