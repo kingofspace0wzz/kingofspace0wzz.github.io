@@ -7,6 +7,10 @@
             tags: ["Computer-Use Agents", "VLM", "Multimodality", "Agentic Systems", "Evaluation & Safety"]
         },
         {
+            selector: "#paper-catchbench",
+            tags: ["Evaluation & Safety", "Agentic Systems"]
+        },
+        {
             selector: "#paper-prime",
             tags: ["Human-Centric Agents", "Agentic Systems"]
         },
