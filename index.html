@@ -1,209 +1,325 @@
 <!DOCTYPE html>
-<!-- Global site tag (gtag.js) - Google Analytics -->
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-187314923-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-187314923-1');
-</script>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content">
 
-    <title>Prince Wang | LLM Agents &amp; AI Research</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187314923-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-187314923-1');
+    </script>
+
+    <title>Prince Wang | Frontier Agents, Agentic RL &amp; Self-Improvement</title>
+    <meta name="description" content="Prince Wang is a PhD student at Carnegie Mellon University and the founder of Agent Frontier. He builds benchmarks, RL environments and independent evaluation pipelines that expand frontier agents into new domains and open problems.">
+    <link rel="icon" type="image/jpeg" href="images/prince.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Sora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="site.css">
-
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#about">Prince Wang</a>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!--<li><a href="#news">News</a></li>-->
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#publication">Publications</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#awards">Awards</a></li>
-                    <li><a href="#music">Music</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <div class="gray-container" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-4">
-                    <a href="#" id="prince">
-                    <img style="margin-top: 0px" id="me-img"
-                    src="images/prince.jpg"
-                    onmouseover="this.src='/images/dark.jpg'" onmouseout="this.src='/images/prince.jpg'">
-                    </a>
-                    <br>
-                    <!-- TODO: Add galleries of Prince -->
-                    <div style="margin-left: 20px; font-size: small; color: rgb(226, 0, 177);">Galleries of Prince 🤴🤴🤴</div>
+    <header class="topbar">
+        <nav class="wrap nav" aria-label="Main">
+            <a class="brand" href="#about">Prince Wang</a>
+            <div class="links">
+                <a href="#research">Research</a>
+                <a href="#agent-frontier">Agent Frontier</a>
+                <a href="#highlights">News</a>
+                <a href="#publication">Publications</a>
+                <a href="#experience">Experience</a>
+                <a href="#music">Music</a>
+            </div>
+            <div class="nav-r">
+                <div class="soc">
+                    <a href="https://scholar.google.com/citations?user=KLOg_HAAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
+                    <a href="https://github.com/kingofspace0wzz" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                    <a href="https://twitter.com/kingofspace0wzz" aria-label="X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
                 </div>
-                <div class="col-xs-8">
-                    <p class="hero-eyebrow">Ph.D. Researcher · Carnegie Mellon University</p>
-                    <h1 class="hero-title">Prince <span>Wang</span></h1>
-                    <p class="hero-tagline">Building capable, efficient, and safe LLM agents for human-centered collaboration.</p>
-                    <div class="hero-links" aria-label="Profile links">
-                        <a href="mailto:princewang@cmu.edu">Email</a>
-                        <a href="https://scholar.google.com/citations?user=KLOg_HAAAAAJ&hl=en">Google Scholar</a>
-                        <a href="https://github.com/kingofspace0wzz">GitHub</a>
-                        <a href="https://twitter.com/kingofspace0wzz">X</a>
-                        <a href="https://open.spotify.com/artist/2OdaHP1cgP3LvKPQEJymWk?si=4B2RKJcbTU2J21Pt6FDOtw&dl_branch=1&nd=1">Spotify</a>
+                <a class="btn sm solid" href="mailto:princewang@cmu.edu">Email</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero" id="about">
+            <div class="wrap hero-grid">
+                <div class="hero-copy">
+                    <div class="hero-id">
+                        <a href="#about" id="prince" aria-label="Prince Wang">
+                            <img id="me-img" src="images/prince.jpg" alt="Portrait of Prince Wang" width="84" height="84"
+                                onmouseover="this.src='images/dark.jpg'" onmouseout="this.src='images/prince.jpg'">
+                        </a>
+                        <div>
+                            <p class="label">PhD Student · Carnegie Mellon University</p>
+                            <h1 class="hero-title">Prince Wang</h1>
+                        </div>
                     </div>
-                    <ul class="hero-chips" aria-label="Research areas">
-                        <li>Human-Centric Agents</li>
-                        <li>Agent Post-Training</li>
-                        <li>Evaluation &amp; Safety</li>
+
+                    <p class="hero-tagline">I bring frontier <em class="ag">agents</em> into open domains and problems they have not yet mastered.</p>
+
+                    <p class="hero-text">
+                        Hi, I'm Prince 👋 I'm a PhD student in Information Systems at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>
+                        and the founder of
+                        <a class="af-inline" href="https://agentfrontier-ai.github.io/"><img src="images/organizations/agent-frontier-logo.svg" alt="" width="18" height="18">Agent&nbsp;Frontier</a>,
+                        a multi-university research group taking frontier agents into domains they have not yet mastered.
+                        I build benchmarks, RL environments and independent evaluation pipelines for frontier agents,
+                        then post-train them to perform there: computer use, mobile use, embodied agents, scientific research, and more.
+                    </p>
+
+                    <ul class="hero-chips" aria-label="Research interests">
+                        <li><a href="#interest-domains">New domains &amp; open problems</a></li>
+                        <li><a href="#interest-rl">Post-training &amp; agentic RL</a></li>
+                        <li><a href="#interest-rsi">Recursive self-improvement</a></li>
                     </ul>
 
+                    <div class="hero-links" aria-label="Profile links">
+                        <a class="btn solid" href="mailto:princewang@cmu.edu">Email me</a>
+                        <a class="btn" href="https://scholar.google.com/citations?user=KLOg_HAAAAAJ&amp;hl=en">Google Scholar</a>
+                        <a class="btn" href="https://github.com/kingofspace0wzz">GitHub</a>
+                        <a class="btn" href="https://twitter.com/kingofspace0wzz">X</a>
+                    </div>
                 </div>
+
+                <figure class="hero-globe">
+                    <canvas id="frontier" role="img" aria-label="A globe of the open domains I work in: computer use, mobile use, embodied agents, scientific research, software engineering, real-time operations, games, human–agent teams, and design and manufacturing. A blue frontier line stays fixed while the globe turns. Each domain becomes a built environment as it crosses the line; dashed slots mark open problems still to come."></canvas>
+                    <figcaption>
+                        <span class="legend-item"><i class="sw sw-line"></i>The frontier</span>
+                        <span class="legend-item"><i class="sw sw-built"></i>Domain with an environment</span>
+                        <span class="legend-item"><i class="sw sw-open"></i>Open problem</span>
+                        <span class="hint">Drag to turn the globe</span>
+                    </figcaption>
+                </figure>
             </div>
+        </section>
 
-            <div class="about-body">
-                <section class="research-logos" aria-labelledby="research-logos-title">
-                    <p class="research-logos__label" id="research-logos-title">Research Experience at</p>
-                    <div class="research-logos__row">
-                        <a class="research-logo" href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Carnegie Mellon University Ph.D. research affiliation, 2022 to present">
-                            <span class="research-logo__stage research-logo__stage--cmu">
-                                <img src="images/organizations/cmu-wordmark.svg" alt="Carnegie Mellon University">
-                            </span>
-                            <span class="research-logo__name">CMU</span>
-                            <span class="research-logo__date">2022–Present</span>
-                        </a>
-                        <a class="research-logo" href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer" aria-label="Amazon research experience, 2025">
-                            <span class="research-logo__stage research-logo__stage--amazon">
-                                <img src="images/organizations/amazon-logo.svg" alt="Amazon">
-                            </span>
-                            <span class="research-logo__name">Amazon</span>
-                            <span class="research-logo__date">2025</span>
-                        </a>
-                        <a class="research-logo" href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer" aria-label="AWS AI Fundamental Research experience, 2026">
-                            <span class="research-logo__stage research-logo__stage--aws">
-                                <img src="images/organizations/aws-logo.svg" alt="AWS">
-                            </span>
-                            <span class="research-logo__name">AWS AI</span>
-                            <span class="research-logo__date">2026</span>
-                        </a>
-                        <a class="research-logo" href="https://www.capitalone.com/tech/" target="_blank" rel="noopener noreferrer" aria-label="Capital One MLX research experience, 2023">
-                            <span class="research-logo__stage research-logo__stage--capital-one">
-                                <img src="images/organizations/capital-one-logo.svg" alt="Capital One">
-                            </span>
-                            <span class="research-logo__name">Capital One · MLX</span>
-                            <span class="research-logo__date">2023</span>
-                        </a>
-                        <a class="research-logo" href="https://nlp.cs.ucsb.edu/" target="_blank" rel="noopener noreferrer" aria-label="UC Santa Barbara NLP Lab research experience, 2018 to 2022">
-                            <span class="research-logo__stage research-logo__stage--ucsb">
-                                <img src="images/organizations/ucsb-wordmark.svg" alt="UC Santa Barbara">
-                            </span>
-                            <span class="research-logo__name">UCSB · NLP Lab</span>
-                            <span class="research-logo__date">2018–2022</span>
-                        </a>
-                        <a class="research-logo" href="https://www.isi.edu/" target="_blank" rel="noopener noreferrer" aria-label="USC Information Sciences Institute research experience, 2019">
-                            <span class="research-logo__stage research-logo__stage--isi">
-                                <img src="images/organizations/usc-isi-logo.jpg" alt="USC Information Sciences Institute">
-                            </span>
-                            <span class="research-logo__name">USC · ISI</span>
-                            <span class="research-logo__date">2019</span>
-                        </a>
-                    </div>
-                </section>
-
-                <p>
-                     Hi, my name is Prince 👋 I am a PhD student 🎓 and entrepreneur 💼 in Information Systems at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>,
-                     where I do research on GenAI and LLM agents 🤖. I am also the co-founder of <a href="https://www.wemeow.ai/">WeMeow.ai</a> (launching soon), an AI startup that builds the next generation of agentic-based social-media platform with proactive and personalized AI agents.
-                         <!-- At CMU, I am also fortunate to collaborate with <a href="https://feifang.info/">Prof. Fei Fang</a>, <a href="https://www.haofrankyang.net/">Prof. Yang (Frank) Hao</a> at JHU,  -->
-                    <!-- and <a href="https://nandofioretto.github.io/">Prof. Ferdinando Fioretto</a> at UVA. Previously, I was an undergraduate student at UCSB
-                    's <a href="https://ccs.ucsb.edu/">College of Creative Studies</a> and
-                    <a href="https://www.cs.ucsb.edu/">Department of Computer Science</a>, where I am fortunate to be advised by
-                    <a href="http://www.cs.cmu.edu/~yuxiangw">Prof. Yu-Xiang Wang</a> and <a
-                        href="http://www.cs.ucsb.edu/~william/">Prof. William Wang</a>.  -->
-                <br/>
-                </p>
-                <p>
-                <img src="images/icon/thought.png" title="thoughts" width="24" height="24">
-                    At CMU, my research focuses on building capable, efficient, and safe LLM agents:
-                    <br>(a) <strong>Human-Centric LLM Agents</strong>: Training LLM agents to perform human-centric tasks by learning from human feedback, preferences, and real-world interaction patterns (<a href="#paper-prime">PRIME</a>, <a href="#paper-agentsocialbench">AgentSocialBench</a>);
-                    <br>(b) <strong>Cost-Efficient Reinforcement Learning</strong>: Developing cost-efficient RL methods for reasoning, multi-agent collaboration, and long-horizon agentic tasks (<a href="#paper-slearl">SLEA-RL</a>);
-                    <br>(c) <strong>Building Robust Agents</strong>: Enhancing the safety and robustness of LLM agents through the design of environments and benchmarks that rigorously evaluate their behavior (<a href="#paper-agentsocialbench">AgentSocialBench</a>).
-                </p>
-                <p>
-                <img src="images/icon/email.png" title="email" width="24" height="24">
-                I am looking for more research collaborations to build better LLM agents! We currently have several A100 GPU clusters capable of large-scale inference and RL post-training. If you are interested and have ideas, please reach out to us at princewang [at] cmu [dot] edu.
-
-                </p>
-
-                <div>
-                    <div id="Education"><img src='images/icon/education.png' title="Education" alt="Education" width="24" height="24"><strong>Education</strong></div>
-                    <div class="row work-block">
-                        <ul>
-                            <li>
-                                2022-present &nbsp; PhD in Information System, Carnegie Mellon University
-                            </li>
-                            <li>
-                                2017-2022 &nbsp; 5 year BS/MS in Computer Science, UC Santa Barbara
-                            </li>
-                        </ul>
-
-                    </div>
+        <section class="orgs" aria-labelledby="research-logos-title">
+            <div class="wrap"><div class="orgs-in">
+                <p class="label" id="research-logos-title">Research experience at</p>
+                <div class="research-logos__row">
+                    <a class="research-logo" href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Carnegie Mellon University Ph.D. research affiliation, 2022 to present">
+                        <span class="research-logo__stage research-logo__stage--cmu"><img src="images/organizations/cmu-wordmark.svg" alt="Carnegie Mellon University"></span>
+                        <span class="research-logo__name">CMU</span>
+                        <span class="research-logo__date">2022–Present</span>
+                    </a>
+                    <a class="research-logo" href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer" aria-label="AWS AI Fundamental Research experience, 2026">
+                        <span class="research-logo__stage research-logo__stage--aws"><img src="images/organizations/aws-logo.svg" alt="AWS"></span>
+                        <span class="research-logo__name">AWS AI</span>
+                        <span class="research-logo__date">2026</span>
+                    </a>
+                    <a class="research-logo" href="https://www.amazon.science/" target="_blank" rel="noopener noreferrer" aria-label="Amazon research experience, 2025">
+                        <span class="research-logo__stage research-logo__stage--amazon"><img src="images/organizations/amazon-logo.svg" alt="Amazon"></span>
+                        <span class="research-logo__name">Amazon</span>
+                        <span class="research-logo__date">2025</span>
+                    </a>
+                    <a class="research-logo" href="https://www.capitalone.com/tech/" target="_blank" rel="noopener noreferrer" aria-label="Capital One MLX research experience, 2023">
+                        <span class="research-logo__stage research-logo__stage--capital-one"><img src="images/organizations/capital-one-logo.svg" alt="Capital One"></span>
+                        <span class="research-logo__name">Capital One · MLX</span>
+                        <span class="research-logo__date">2023</span>
+                    </a>
+                    <a class="research-logo" href="https://nlp.cs.ucsb.edu/" target="_blank" rel="noopener noreferrer" aria-label="UC Santa Barbara NLP Lab research experience, 2018 to 2022">
+                        <span class="research-logo__stage research-logo__stage--ucsb"><img src="images/organizations/ucsb-wordmark.svg" alt="UC Santa Barbara"></span>
+                        <span class="research-logo__name">UCSB · NLP Lab</span>
+                        <span class="research-logo__date">2018–2022</span>
+                    </a>
+                    <a class="research-logo" href="https://www.isi.edu/" target="_blank" rel="noopener noreferrer" aria-label="USC Information Sciences Institute research experience, 2019">
+                        <span class="research-logo__stage research-logo__stage--isi"><img src="images/organizations/usc-isi-logo.jpg" alt="USC Information Sciences Institute"></span>
+                        <span class="research-logo__name">USC · ISI</span>
+                        <span class="research-logo__date">2019</span>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="rows" style="margin-left: 8%">
+            </div></div>
+        </section>
 
-        <section id="highlights" class="preview-section highlights-section">
-            <div class="container">
-                <div class="preview-section-header">
-                    <div>
-                        <h2>Recent Highlights</h2>
-                    </div>
-                    <p>Selected updates from 2026</p>
+        <section class="sec" id="research">
+            <div class="wrap">
+                <p class="label">Research</p>
+                <div class="head">
+                    <h2>Expanding what frontier agents can do.</h2>
+                    <p class="sub">I build benchmarks, RL environments and independent evaluation pipelines for frontier agents, so they can expand their capabilities into open problems and new domains they have not yet mastered.</p>
                 </div>
-                <div class="highlight-list">
-                    <article class="highlight-item">
-                        <time datetime="2026-09">Sep 2026</time>
-                        <p>🎉 Our two RL / post-training papers, <a href="#paper-slearl">SLEA-RL</a> and <a href="#paper-when-simulation-lies">When Simulation Lies</a>, were accepted to NeurIPS 2026.</p>
+                <div class="flow">
+                    <article class="fl" id="interest-domains">
+                        <canvas data-card="open" aria-hidden="true"></canvas>
+                        <i>01</i>
+                        <h3>New domains &amp; open problems</h3>
+                        <p>Expanding frontier agents into domains they cannot handle yet: computer-use agents, mobile-use agents, embodied agents, agents for scientific research, and more. Each domain becomes tasks with verifiers and an independent evaluation.</p>
+                        <p class="refs"><a href="#paper-cua-swe">CUA-SWE</a> <a href="#paper-catchbench">CatchBench</a> <a href="#paper-agentsocialbench">AgentSocialBench</a> <a href="#paper-weclawarena">WeClawArena</a></p>
                     </article>
-                    <article class="highlight-item">
-                        <time datetime="2026-09">Sep 2026</time>
-                        <p>📄 New preprint: <a href="#paper-cua-swe">CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering</a>, a benchmark for software engineering with computer use.</p>
+                    <article class="fl" id="interest-rl">
+                        <canvas data-card="rl" aria-hidden="true"></canvas>
+                        <i>02</i>
+                        <h3>Post-training &amp; agentic RL</h3>
+                        <p>RL environments where the verifier is the reward, and post-training recipes for multi-turn, long-horizon agents that still hold up when they move from simulation to the real world.</p>
+                        <p class="refs"><a href="#paper-slearl">SLEA-RL</a> <a href="#paper-when-simulation-lies">When Simulation Lies</a></p>
                     </article>
-                    <article class="highlight-item">
-                        <time>Aug 2026</time>
-                        <p>🏆 <a href="#paper-agentsocialbench">AgentSocialBench</a> was nominated for the EMNLP 2026 Outstanding Paper Award.</p>
-                    </article>
-                    <article class="highlight-item">
-                        <time>Aug 2026</time>
-                        <p>🎉 <a href="#paper-weclawarena">WeClawArena</a> was accepted to EMNLP 2026 Findings.</p>
-                    </article>
-                    <article class="highlight-item">
-                        <time>2026</time>
-                        <p>🏆 <a href="https://arxiv.org/abs/2502.05468">Gen-DFL</a> received recognition in the IISE DAIS Best Track Paper Competition.</p>
-                    </article>
-                    <article class="highlight-item">
-                        <time>Summer 2026</time>
-                        <p>Joined Amazon AWS AI Fundamental Research for an internship focused on LLMs and agents.</p>
+                    <article class="fl" id="interest-rsi">
+                        <canvas data-card="rsi" aria-hidden="true"></canvas>
+                        <i>03</i>
+                        <h3>Recursive self-improvement</h3>
+                        <p>Environments and loops in which agents evaluate, train and improve themselves round after round, from memory that evolves without training to repeated cycles of evaluation and RL.</p>
+                        <p class="refs"><a href="#paper-prime">PRIME</a></p>
                     </article>
                 </div>
             </div>
         </section>
 
+        <section class="sec" id="agent-frontier">
+            <div class="wrap">
+                <div class="af">
+                    <div class="af-intro">
+                        <a class="af-brand" href="https://agentfrontier-ai.github.io/" aria-label="Agent Frontier website">
+                            <img src="images/organizations/agent-frontier-logo.svg" alt="" width="44" height="44">
+                            <span>Agent Frontier</span>
+                        </a>
+                        <p class="label">Founder &amp; organizer</p>
+                        <h2>Taking frontier agents where they have not been.</h2>
+                        <p class="sub">
+                            Agent Frontier is a multi-university research group dedicated to bringing frontier agents into open domains and problems they have not yet mastered.
+                            For each new domain we build AI-native environments, benchmarks and RL environments, run independent evaluations of frontier agents, and post-train them there, round after round, toward recursive self-improvement.
+                        </p>
+                        <p class="af-from">With researchers from CMU, USC, UCLA, Arizona State, UW–Madison and Princeton.</p>
+                        <div class="cta">
+                            <a class="btn solid" href="https://agentfrontier-ai.github.io/">Visit Agent Frontier</a>
+                            <a class="btn" href="https://github.com/agentfrontier-ai">GitHub</a>
+                            <a class="btn" href="https://discord.gg/JPbFVPrW2">Discord</a>
+                        </div>
+                    </div>
+                    <div class="af-projects">
+                        <p class="label">Shipped projects</p>
+                        <div class="plist">
+                            <a class="prow" href="https://zelongxueric.github.io/cua-swe-website/">
+                                <h3>CUA-SWE</h3>
+                                <p class="d">Agents repair software by running it and looking at it.</p>
+                                <div class="tags"><span style="--h:43,75,255"><i></i>Computer use</span><span style="--h:34,52,120"><i></i>Software engineering</span></div>
+                            </a>
+                            <a class="prow" href="https://kingofspace0wzz.github.io/CUA-frontier/areas/real-time/">
+                                <h3>LiveWorldArena</h3>
+                                <p class="d">Agents operate software, games and simulated robots in real time.</p>
+                                <div class="tags"><span style="--h:224,86,10"><i></i>Real-time operations</span><span style="--h:208,48,104"><i></i>Games</span><span style="--h:104,74,228"><i></i>Embodied agents</span></div>
+                            </a>
+                            <a class="prow" href="https://kingofspace0wzz.github.io/CUA-frontier/areas/physical-ai/">
+                                <h3>FrontierPro</h3>
+                                <p class="d">Agents trace physical failures back to the digital decisions that caused them.</p>
+                                <div class="tags"><span style="--h:84,124,22"><i></i>Design &amp; manufacturing</span><span style="--h:150,104,0"><i></i>Scientific research</span></div>
+                            </a>
+                            <a class="prow" href="https://agent-social-bench.github.io/">
+                                <h3>AgentSocialBench</h3>
+                                <p class="d">Agent teams serve different people and must keep each person's information private.</p>
+                                <div class="tags"><span style="--h:12,124,176"><i></i>Human–agent teams</span></div>
+                            </a>
+                            <a class="prow" href="https://arxiv.org/abs/2608.03499">
+                                <h3>WeClawArena</h3>
+                                <p class="d">Agents acting for different owners collaborate across private workspaces, with every step audited.</p>
+                                <div class="tags"><span style="--h:12,124,176"><i></i>Human–agent teams</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="highlights">
+            <div class="wrap">
+                <p class="label">News</p>
+                <div class="head">
+                    <h2>Highlights</h2>
+                    <p class="sub">Launches, papers, awards and milestones from 2025 and 2026.</p>
+                </div>
+                <div class="highlight-key" aria-hidden="true">
+                    <span class="kind kind-launch">Launch</span>
+                    <span class="kind kind-award">Award</span>
+                    <span class="kind kind-paper">Accepted</span>
+                    <span class="kind kind-preprint">Preprint</span>
+                    <span class="kind kind-career">Career</span>
+                </div>
+                <div class="rows highlight-list">
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-11">Nov 2026</time>
+                        <span class="kind kind-launch">Launch</span>
+                        <p>🚀 Launched <a class="af-inline" href="https://agentfrontier-ai.github.io/"><img src="images/organizations/agent-frontier-logo.svg" alt="" width="18" height="18">Agent&nbsp;Frontier</a>, a multi-university research group that brings frontier agents into open domains and problems they have not yet mastered.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-11">Nov 2026</time>
+                        <span class="kind kind-launch">Launch</span>
+                        <p><a href="https://kingofspace0wzz.github.io/CUA-frontier/areas/physical-ai/">FrontierPro</a> is live: agents trace physical failures back to the digital decisions that caused them.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-11">Nov 2026</time>
+                        <span class="kind kind-launch">Launch</span>
+                        <p><a href="https://kingofspace0wzz.github.io/CUA-frontier/areas/real-time/">LiveWorldArena</a> is live: agents operate software, games and simulated robots in real time.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-09">Sep 2026</time>
+                        <span class="kind kind-paper">Accepted</span>
+                        <p>🎉 Our two RL / post-training papers, <a href="#paper-slearl">SLEA-RL</a> and <a href="#paper-when-simulation-lies">When Simulation Lies</a>, were accepted to NeurIPS 2026.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-09">Sep 2026</time>
+                        <span class="kind kind-launch">Launch</span>
+                        <p>📄 Released <a href="#paper-cua-swe">CUA-SWE: When Computer-Use Agents Meet Visual Software Engineering</a>, a benchmark for software engineering with computer use, with its <a href="https://zelongxueric.github.io/cua-swe-website/">project site</a> and <a href="https://huggingface.co/datasets/kingofspace0wzz/CUA-SWE">dataset</a>.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-08">Aug 2026</time>
+                        <span class="kind kind-award">Award</span>
+                        <p>🏆 <a href="#paper-agentsocialbench">AgentSocialBench</a> was nominated for the EMNLP 2026 Outstanding Paper Award.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-08">Aug 2026</time>
+                        <span class="kind kind-paper">Accepted</span>
+                        <p>🎉 <a href="#paper-agentsocialbench">AgentSocialBench</a> was accepted to EMNLP 2026, and <a href="#paper-weclawarena">WeClawArena</a> to EMNLP 2026 Findings.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-08">Aug 2026</time>
+                        <span class="kind kind-preprint">Preprint</span>
+                        <p>📄 <a href="#paper-catchbench">CatchBench: When Can an Agent Failure Be Caught?</a></p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026">Summer 2026</time>
+                        <span class="kind kind-career">Career</span>
+                        <p>Joined Amazon AWS AI Fundamental Research for an internship focused on LLMs and agents.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-04">Apr 2026</time>
+                        <span class="kind kind-launch">Launch</span>
+                        <p><a href="https://agent-social-bench.github.io/">AgentSocialBench</a> is live: a benchmark and leaderboard for privacy risks in human-centered agentic social networks.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-04">Apr 2026</time>
+                        <span class="kind kind-preprint">Preprint</span>
+                        <p>📄 <a href="#paper-prime">PRIME: Training Free Proactive Reasoning via Iterative Memory Evolution for User-Centric Agent</a></p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-02">Feb 2026</time>
+                        <span class="kind kind-award">Award</span>
+                        <p>🏆 <a href="#paper-gen-dfl">Gen-DFL</a> received recognition in the IISE DAIS Best Track Paper Competition.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2026-01">Jan 2026</time>
+                        <span class="kind kind-paper">Accepted</span>
+                        <p>🎉 <a href="#paper-gen-dfl">Gen-DFL: Decision-Focused Generative Learning for Robust Decision Making</a> was accepted to ICLR 2026.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2025-05">Summer 2025</time>
+                        <span class="kind kind-career">Career</span>
+                        <p>Joined Amazon as an Applied Scientist Intern, working on large language models and agents.</p>
+                    </article>
+                    <article class="nrow highlight-item">
+                        <time datetime="2025-02">Feb 2025</time>
+                        <span class="kind kind-preprint">Preprint</span>
+                        <p>📄 <a href="https://arxiv.org/abs/2502.05468">Gen-DFL</a> posted on arXiv: generative models for robust, decision-focused learning.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <div id="publication">
             <div class="container">
@@ -556,145 +672,129 @@
             </div>
         </div>
 
-        <br>
-
-        <div id="experience">
-            <div class="container">
-                <h2 class="section_title">Experience</h2>
-                <div class="row work-block">
-
-                    <div class="project col-xs-3" style="position: center">
-                        <h4><span class="badge badge-secondary" style="background-color:
-                            #6e038b; font-size: 14px"> Summer 2026</span></h4>
+        <section class="sec" id="experience">
+            <div class="wrap">
+                <p class="label">Experience</p>
+                <div class="head">
+                    <h2>Where I've done research</h2>
+                </div>
+                <div class="rows xp-list">
+                    <div class="xp-row">
+                        <span class="xp-date">Summer 2026</span>
+                        <div>
+                            <b>Amazon, AWS AI Fundamental Research</b>
+                            <span>Research Intern, Large Language Models &amp; Agents</span>
+                            <span class="xp-people">Mentors: Xiaohan Fei, Zhaoyang Zhang, Shuli Jiang</span>
+                        </div>
                     </div>
-                    <div class="col-xs-9">
-                        Research Internship in Large Language Models/Agents, <strong>Amazon, AWS AI Fundamental Research</strong>
-                        </br>
-                        Mentors: Xiaohan Fei, Zhaoyang Zhang, Shuli Jiang
+                    <div class="xp-row">
+                        <span class="xp-date">May – Aug 2025</span>
+                        <div>
+                            <b>Amazon</b>
+                            <span>Applied Scientist Intern, Large Language Models &amp; Agents</span>
+                            <span class="xp-people">Mentor: Dong Li</span>
+                        </div>
                     </div>
-
-                    <div class="project col-xs-3" style="position: center">
-                            <h4><span class="badge badge-secondary" style="background-color:
-                                #6e038b; font-size: 14px">May 2025 - Aug 2025</span></h4>
+                    <div class="xp-row">
+                        <span class="xp-date">May – Aug 2023</span>
+                        <div>
+                            <b>Capital One, MLX</b>
+                            <span>Research Intern, Machine Learning</span>
+                            <span class="xp-people">Advisor: Nikita V Seleznev</span>
                         </div>
-                        <div class="col-xs-9">
-                            Research Internship (Applied Scientist Intern) in Large Language Models/Agents, <strong>Amazon</strong>
-                            </br>
-                            Mentor: Dong Li 
-                        </div>
-                    
-                    <div class="project col-xs-3" style="position: center">
-                            <h4><span class="badge badge-secondary" style="background-color:
-                                #6e038b; font-size: 14px">May 2023 - Aug 2023</span></h4>
-                        </div>
-                        <div class="col-xs-9">
-                            Research Internship in Machine Learning, <strong>Capital One, MLX</strong>
-                            </br>
-                            Advisors: ‪Nikita V Seleznev 
-                        </div>
-                    
-                    <div class="project col-xs-3" style="position: center">
-                            <h4><span class="badge badge-secondary" style="background-color:
-                                #6e038b; font-size: 14px">Oct 2018 - 2022</span></h4>
-                        </div>
-                        <div class="col-xs-9">
-                            Research Assistant, <strong>UCSB, NLP Lab</strong>
-                            </br>
-                            Advisors: <a
-                                href="http://www.cs.ucsb.edu/~william/">William Wang</a>
-                            and <a href="http://www.cs.cmu.edu/~yuxiangw">Yu-Xiang Wang</a> 
-                        </div>
-
-                    <div class="project col-xs-3" style="position: center">
-                        <h4><span class="badge badge-secondary" style="background-color:
-                            #6e038b; font-size: 14px">June 2019 - Sep 2019</span></h4>
                     </div>
-                    <div class="col-xs-9">
-                        Research Internship, <strong>USC, ISI NLP Lab</strong>
-                        </br>
-                        Advisors: <a
-                            href="https://vnpeng.net/">Nanyun (Violet) Peng</a>
-                        and <a href="https://www.isi.edu/people/gregv/about">Greg Ver Steeg</a> 
+                    <div class="xp-row">
+                        <span class="xp-date">Oct 2018 – 2022</span>
+                        <div>
+                            <b>UCSB, NLP Lab</b>
+                            <span>Research Assistant</span>
+                            <span class="xp-people">Advisors: <a href="http://www.cs.ucsb.edu/~william/">William Wang</a> and <a href="http://www.cs.cmu.edu/~yuxiangw">Yu-Xiang Wang</a></span>
+                        </div>
+                    </div>
+                    <div class="xp-row">
+                        <span class="xp-date">Jun – Sep 2019</span>
+                        <div>
+                            <b>USC, ISI NLP Lab</b>
+                            <span>Research Intern</span>
+                            <span class="xp-people">Advisors: <a href="https://vnpeng.net/">Nanyun (Violet) Peng</a> and <a href="https://www.isi.edu/people/gregv/about">Greg Ver Steeg</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split">
+                    <div id="education">
+                        <p class="label">Education</p>
+                        <div class="rows xp-list">
+                            <div class="xp-row">
+                                <span class="xp-date">2022 – Present</span>
+                                <div><b>Carnegie Mellon University</b><span>PhD in Information Systems</span></div>
+                            </div>
+                            <div class="xp-row">
+                                <span class="xp-date">2017 – 2022</span>
+                                <div><b>UC Santa Barbara</b><span>5-year BS/MS in Computer Science</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="awards">
+                        <p class="label">Awards</p>
+                        <ul class="rows award-list">
+                            <li><span class="yr">2026</span> EMNLP Outstanding Paper Award Nominee</li>
+                            <li><span class="yr">2026</span> IISE DAIS Best Track Paper Competition</li>
+                            <li><span class="yr">2020</span> CRA Outstanding Undergraduate Researchers, Finalist</li>
+                            <li><span class="yr">2019</span> Chancellor's Award for Excellence in Undergraduate Research (UCSB's highest honor for undergraduate research; 4 recipients each year)</li>
+                            <li><span class="yr">2019</span> UCSB NLP Lab Outstanding Undergraduate Research Award</li>
+                            <li><span class="yr">2018</span> Gene and Lucas Undergraduate Research Award</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="awards">
-            <div class="container">
-                <h2 class="section_title">Awards</h2>
-                <div class="row work-block">
-                        <li>
-                            2026 &nbsp; EMNLP Outstanding Paper Award Nominee
-                        </li>
-                        <li>
-                            2026 &nbsp; IISE DAIS Best Track Paper Competition
-                        </li>
-                        <li>
-                            2020 &nbsp CRA Outstanding Undergraduate Researchers, Finalist
-                        </li>
-                            <!--<li id="li-important"> 2018.10 &nbsp; I am looking for a Ph.D. position!</li>-->
-                        <li> 2019 &nbsp Chancellor's Award for Excellence in Undergraduate Research
-                                (Highest honor for Undergraduate Research at UCSB; 4 recipients each year)
-                        </li>
-                        <li> 2019 &nbsp UCSB NLP Lab Outstanding Undergraduate Research Award
-                        </li>
-                            <!--<li id="li-important"> 2018.10 &nbsp; I am looking for a Ph.D. position!</li>-->
-                        <li> 2018 &nbsp Gene and Lucas Undergraduate Research Award
-                        </li>
-                </div>
-                
-            </div>
-        </div>
-
-        <div id="music">
-                <div class="container">
-                    <h2 class="section_title"> Music &nbsp;
-                            <img src = "images/icon/music.png" title = "music" width ="28">
-                            <a href="https://open.spotify.com/artist/2OdaHP1cgP3LvKPQEJymWk?si=4B2RKJcbTU2J21Pt6FDOtw&dl_branch=1&nd=1">
-                                <img src = "images/icon/spotify.png" title = "spotify" width="24">
-                            </a>
-                            <a href="https://music.163.com/#/artist?id=47468883">
-                                <img src = "images/icon/netease.jpeg" title = "netease" width="24">
-                            </a>
-                    </h2>
-                        <p>
-                            Apart from Academia and writing books, I am also a Music producer, songwriter, and singer.
-                            <br>My music genre is mainly in classical 🎻 or neo-classical music 🎷. I also do EDM 📻, Deep House 💃🏻, and many others.
-<!--                             <br>Follow me on my new instagram <a href="https://www.instagram.com/princewangai/">@princewangai</a> -->
-                            <br>Check out my Singles on <a href="https://open.spotify.com/embed/track/1UtfpNPzoNfUr9EvLo3LXP?utm_source=generator">Spotify</a>. 
-                            
-                            
-                        </p>
-                    
+        <section class="sec" id="music">
+            <div class="wrap">
+                <div class="music">
+                    <div>
+                        <p class="label">Music</p>
+                        <h2>Outside the lab</h2>
+                    </div>
+                    <div>
+                        <p class="sub">Apart from academia and writing books, I am also a music producer, songwriter and singer. My music is mainly classical 🎻 and neo-classical 🎷, and I also make EDM 📻, deep house 💃🏻 and more. Check out my singles:</p>
+                        <div class="cta">
+                            <a class="btn" href="https://open.spotify.com/artist/2OdaHP1cgP3LvKPQEJymWk?si=4B2RKJcbTU2J21Pt6FDOtw&amp;dl_branch=1&amp;nd=1"><img src="images/icon/spotify.png" alt="" width="20" height="20">Spotify</a>
+                            <a class="btn" href="https://music.163.com/#/artist?id=47468883"><img src="images/icon/netease.jpeg" alt="" width="20" height="20">NetEase Cloud Music</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-    </div>
-    
-    <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1UtfpNPzoNfUr9EvLo3LXP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1FKWJdeX8rSRUpKYrulJ2P?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tr>
-          <td>
-            <br>
-            <p align="middle">
-              <font size="2">
-                Template borrowed from my friend <a href="https://sunjiao123sun.github.io/">Jiao</a>. Check out her work on fairness/NLP!
-              </font>
-            </p>
-          </td>
-        </tr>
-      </table> -->
-
-    <footer class="container footer">
-        <div class="row">
-            <div class="text-center">
+        <section class="close" aria-labelledby="close-title">
+            <div class="wrap">
+                <div class="close-in">
+                    <div>
+                        <h2 id="close-title">Have a domain your agents can't handle yet?</h2>
+                        <p>I'm always looking for collaborators on new domains, RL environments and agent post-training. We have A100 GPU clusters for large-scale inference and RL post-training. Reach me at princewang [at] cmu [dot] edu.</p>
+                    </div>
+                    <a class="btn" href="mailto:princewang@cmu.edu">Get in touch</a>
+                </div>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>© 2026 Prince Wang</span>
+            <nav aria-label="Footer">
+                <a href="#research">Research</a>
+                <a href="#publication">Publications</a>
+                <a href="https://agentfrontier-ai.github.io/">Agent Frontier</a>
+                <a href="https://scholar.google.com/citations?user=KLOg_HAAAAAJ&amp;hl=en">Scholar</a>
+                <a href="https://github.com/kingofspace0wzz">GitHub</a>
+            </nav>
         </div>
     </footer>
 
 <script src="site.js"></script>
+<script src="frontier-globe.js"></script>
 </body>
 </html>
