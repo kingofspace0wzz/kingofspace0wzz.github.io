@@ -32,6 +32,8 @@ class PublicationPageTests(unittest.TestCase):
 
     def test_review_status_badges(self):
         expected = {
+            "FrontierPro:": "Preprint 2026",
+            "LiveWorldBench:": "Preprint 2026",
             "CUA-SWE:": "Preprint 2026",
             "CatchBench:": "Preprint 2026",
             "WeClawArena": "EMNLP 2026 (Findings)",
@@ -181,6 +183,8 @@ class PublicationPageTests(unittest.TestCase):
 
         positions = {}
         for prefix in (
+            "FrontierPro:",
+            "LiveWorldBench:",
             "CUA-SWE:",
             "CatchBench:",
             "PRIME:",

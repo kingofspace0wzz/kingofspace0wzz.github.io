@@ -152,7 +152,7 @@
                         <i>01</i>
                         <h3>New domains &amp; open problems</h3>
                         <p>Expanding frontier agents into domains they cannot handle yet: computer-use agents, mobile-use agents, embodied agents, agents for scientific research, and more. Each domain becomes tasks with verifiers and an independent evaluation.</p>
-                        <p class="refs"><a href="#paper-cua-swe">CUA-SWE</a> <a href="#paper-catchbench">CatchBench</a> <a href="#paper-agentsocialbench">AgentSocialBench</a> <a href="#paper-weclawarena">WeClawArena</a></p>
+                        <p class="refs"><a href="#paper-frontierpro">FrontierPro</a> <a href="#paper-liveworldbench">LiveWorldBench</a> <a href="#paper-cua-swe">CUA-SWE</a> <a href="#paper-catchbench">CatchBench</a> <a href="#paper-agentsocialbench">AgentSocialBench</a> <a href="#paper-weclawarena">WeClawArena</a></p>
                     </article>
                     <article class="fl" id="interest-rl">
                         <canvas data-card="rl" aria-hidden="true"></canvas>
@@ -202,14 +202,14 @@
                                 <div class="tags"><span style="--h:43,75,255"><i></i>Computer use</span><span style="--h:34,52,120"><i></i>Software engineering</span></div>
                             </a>
                             <a class="prow" href="https://kingofspace0wzz.github.io/CUA-frontier/areas/real-time/">
-                                <h3>LiveWorldArena</h3>
-                                <p class="d">Agents operate software, games and simulated robots in real time.</p>
+                                <h3>LiveWorldBench</h3>
+                                <p class="d">Agents operate real software, real games and live robots on the world's own clock.</p>
                                 <div class="tags"><span style="--h:224,86,10"><i></i>Real-time operations</span><span style="--h:208,48,104"><i></i>Games</span><span style="--h:104,74,228"><i></i>Embodied agents</span></div>
                             </a>
                             <a class="prow" href="https://kingofspace0wzz.github.io/CUA-frontier/areas/physical-ai/">
                                 <h3>FrontierPro</h3>
-                                <p class="d">Agents trace physical failures back to the digital decisions that caused them.</p>
-                                <div class="tags"><span style="--h:84,124,22"><i></i>Design &amp; manufacturing</span><span style="--h:150,104,0"><i></i>Scientific research</span></div>
+                                <p class="d">Agents close the loop between professional software and the physical world.</p>
+                                <div class="tags"><span style="--h:84,124,22"><i></i>Design &amp; manufacturing</span><span style="--h:150,104,0"><i></i>Scientific research</span><span style="--h:104,74,228"><i></i>Embodied agents</span></div>
                             </a>
                             <a class="prow" href="https://agent-social-bench.github.io/">
                                 <h3>AgentSocialBench</h3>
@@ -250,12 +250,12 @@
                     <article class="nrow highlight-item">
                         <time datetime="2026-11">Nov 2026</time>
                         <span class="kind kind-launch">Launch</span>
-                        <p><a href="https://kingofspace0wzz.github.io/CUA-frontier/areas/physical-ai/">FrontierPro</a> is live: agents trace physical failures back to the digital decisions that caused them.</p>
+                        <p><a href="#paper-frontierpro">FrontierPro</a> is live: a benchmark of closed-loop professional work across digital and physical worlds, from CAD and lab instruments to robots and vehicles.</p>
                     </article>
                     <article class="nrow highlight-item">
                         <time datetime="2026-11">Nov 2026</time>
                         <span class="kind kind-launch">Launch</span>
-                        <p><a href="https://kingofspace0wzz.github.io/CUA-frontier/areas/real-time/">LiveWorldArena</a> is live: agents operate software, games and simulated robots in real time.</p>
+                        <p><a href="#paper-liveworldbench">LiveWorldBench</a> is live: can frontier agents operate in live, real-time worlds of real software, real games and live robot physics?</p>
                     </article>
                     <article class="nrow highlight-item">
                         <time datetime="2026-09">Sep 2026</time>
@@ -332,6 +332,7 @@
                 <div class="publication-filter" role="group" aria-label="Filter publications by topic">
                     <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
                     <button class="filter-button" type="button" data-filter="computer-use-agents" aria-pressed="false">Computer-Use Agents</button>
+                    <button class="filter-button" type="button" data-filter="embodied-agents" aria-pressed="false">Embodied Agents</button>
                     <button class="filter-button" type="button" data-filter="vlm" aria-pressed="false" title="Vision-Language Models">VLM</button>
                     <button class="filter-button" type="button" data-filter="multimodality" aria-pressed="false">Multimodality</button>
                     <button class="filter-button" type="button" data-filter="agentic-systems" aria-pressed="false">Agentic Systems</button>
@@ -340,7 +341,61 @@
                     <button class="filter-button" type="button" data-filter="post-training" aria-pressed="false">Post-Training</button>
                     <button class="filter-button" type="button" data-filter="generative-models" aria-pressed="false">Generative Models</button>
                 </div>
-                <p class="publication-filter-status" aria-live="polite">Showing all 11 publications</p>
+                <p class="publication-filter-status" aria-live="polite">Showing all 13 publications</p>
+
+                <div style="height:8px;font-size:1px;">&nbsp;</div>
+
+                <div class="row work-block">
+                    <div class="project col-xs-3" style="position: center">
+                        <h4><span class="badge badge-secondary badge-preprint"
+                            style="font-size: 14px">Preprint 2026</span></h4>
+                    </div>
+
+                    <div class="col-xs-9">
+                        <strong>Prince Zizhuang Wang</strong>, Yingtao Luo, Zelong Xu, Yuding Wang, Chenhao Liang, Defu Cao, Chaorui Yao, Xueying Ding, Xiaolin Zhou, Aojie Yuan, Haiyue Zhang, Yifu Lu, Yuhang Yao, Yiyue Qian, Yue Zhao, Xiyang Hu, Shuli Jiang
+                        <br>
+                        <a id="paper-frontierpro" href="https://kingofspace0wzz.github.io/CUA-frontier/areas/physical-ai/">
+                            FrontierPro: Benchmarking Computer-Use Agents on Closed-Loop Professional Work Across Digital and Physical Worlds
+                        </a>
+                        <div class="paper-links" aria-label="FrontierPro resources">
+                            <a href="https://kingofspace0wzz.github.io/CUA-frontier/areas/physical-ai/" aria-label="FrontierPro project website">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <ellipse cx="12" cy="12" rx="4" ry="9"></ellipse>
+                                    <path d="M3 12h18M5 6.5h14M5 17.5h14"></path>
+                                </svg>
+                                <span>Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height:8px;font-size:1px;">&nbsp;</div>
+
+                <div class="row work-block">
+                    <div class="project col-xs-3" style="position: center">
+                        <h4><span class="badge badge-secondary badge-preprint"
+                            style="font-size: 14px">Preprint 2026</span></h4>
+                    </div>
+
+                    <div class="col-xs-9">
+                        <strong>Prince Zizhuang Wang</strong>, Yuding Wang, Yingtao Luo, Zelong Xu, Aojie Yuan, Xiaolin Zhou, Xueying Ding, Chenhao Liang, Haiyue Zhang, Chaorui Yao, Defu Cao, Yifu Lu, Yuhang Yao, Yiyue Qian, Yue Zhao, Xiyang Hu, Shuli Jiang
+                        <br>
+                        <a id="paper-liveworldbench" href="https://kingofspace0wzz.github.io/CUA-frontier/areas/real-time/">
+                            LiveWorldBench: Can Frontier Agents Operate in Live and Real-time Worlds?
+                        </a>
+                        <div class="paper-links" aria-label="LiveWorldBench resources">
+                            <a href="https://kingofspace0wzz.github.io/CUA-frontier/areas/real-time/" aria-label="LiveWorldBench project website">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <ellipse cx="12" cy="12" rx="4" ry="9"></ellipse>
+                                    <path d="M3 12h18M5 6.5h14M5 17.5h14"></path>
+                                </svg>
+                                <span>Project</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div style="height:8px;font-size:1px;">&nbsp;</div>
 

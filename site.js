@@ -3,6 +3,14 @@
 
     const publications = [
         {
+            selector: "#paper-frontierpro",
+            tags: ["Computer-Use Agents", "Embodied Agents", "VLM", "Multimodality", "Agentic Systems", "Evaluation & Safety"]
+        },
+        {
+            selector: "#paper-liveworldbench",
+            tags: ["Computer-Use Agents", "Embodied Agents", "VLM", "Multimodality", "Agentic Systems", "Evaluation & Safety"]
+        },
+        {
             selector: "#paper-cua-swe",
             tags: ["Computer-Use Agents", "VLM", "Multimodality", "Agentic Systems", "Evaluation & Safety"]
         },
